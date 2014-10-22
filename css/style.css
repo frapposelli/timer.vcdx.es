@@ -17,7 +17,7 @@
     }
 }
 #theTime {
-    font: 400px Lato;
+    font: 350px Lato;
     line-height: 280px;
     color: #fff;
     -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
