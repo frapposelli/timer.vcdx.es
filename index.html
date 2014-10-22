@@ -1,0 +1,38 @@
+<html manifest="native.manifest">
+
+<head>
+    <title>VCDX Timer</title>
+    <meta name="viewport" content="user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon-precomposed" href="img/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch-icon-ipad-retina.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/vcdxtimer.js"></script>
+    <script type="text/javascript" src="js/timings.js"></script>
+</head>
+
+<body ontouchmove="BlockMove(event);" onload="timerLoad('DCVDesignDefense');">
+    <audio id="notification" src="audio/notification.mp3"></audio>
+    <audio id="endsound" src="audio/endsound.mp3"></audio>
+    <div id="container">
+        <div id="copyright">Version 1.3 - &copy;2014 Fabio Rapposelli, All trademarks used herein belong to their respective owners.</div>
+        <div id="vmwareLogo"></div>
+        <div id="certTitle"></div>
+        <div id="sessionTitle"></div>
+        <div id="theTime"></div>
+        <div id="timerControls">
+            <input type="button" class="changebutton" value="Switch" onclick="notify(); Carousel();" />
+            <input type="button" class="resetbutton" value="Reset" onclick="notify(); timerLoad(currentScenario);" />
+            <input type="button" class="startbutton" value="Start" onclick="notify(); $('#theTime').countdown('resume');" />
+            <input type="button" class="stopbutton" value="Stop" name="stop" onclick="notify(); $('#theTime').countdown('pause');" />
+            <span class="stretch"></span>
+        </div>
+    </div>
+</body>
+
+</html>

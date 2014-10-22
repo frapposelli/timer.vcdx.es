@@ -1,0 +1,247 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+}
+#vmwareLogo {
+    width: 148px;
+    height: 23px;
+    background-image: url(../img/vmware_logo.png);
+    margin-top: 15px;
+    margin-left: 15px
+}
+@media(-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
+    #vmwareLogo {
+        background-image: url(../img/vmware_logo@2x.png);
+        -webkit-background-size: 148px 23px
+    }
+}
+#theTime {
+    font: 400px Lato;
+    line-height: 280px;
+    color: #fff;
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
+    text-align: center;
+    margin-top: 30px
+}
+#copyright {
+    color: white;
+    text-align: right;
+    font: 8px Lato;
+    float: right;
+    margin-right: 12px
+}
+div#theTime.hasCountdown.highlight {
+    color: red
+}
+body {
+    background-image: -o-linear-gradient(-90deg, #1f1f21 3%, #6a6b6f 100%);
+    background-image: -moz-linear-gradient(-90deg, #1f1f21 3%, #6a6b6f 100%);
+    background-image: -webkit-linear-gradient(-90deg, #1f1f21 3%, #6a6b6f 100%);
+    background-image: -ms-linear-gradient(-90deg, #1f1f21 3%, #6a6b6f 100%);
+    background-image: linear-gradient(-180deg, #1f1f21 3%, #6a6b6f 100%);
+    margin: 0;
+    -webkit-text-size-adjust: none
+}
+#container {
+    position: relative;
+    height: 100%
+}
+#timerControls {
+    margin-top: 150px;
+    margin-left: 0;
+    background: #323235;
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 28em;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    min-width: 612px
+}
+#certTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 0
+}
+#sessionTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center
+}
+.changebutton {
+    margin-left: 15px;
+    background-image: -o-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: -moz-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: -webkit-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: -ms-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: linear-gradient(-180deg, #c6c6c6 0, #5d5d5d 100%);
+    border: 1px solid #4a4a4a;
+    color: #d4d4d4
+}
+.resetbutton {
+    background-image: -o-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: -moz-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: -webkit-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: -ms-linear-gradient(-90deg, #c6c6c6 0, #5d5d5d 100%);
+    background-image: linear-gradient(-180deg, #c6c6c6 0, #5d5d5d 100%);
+    border: 1px solid #4a4a4a;
+    color: #d4d4d4
+}
+.startbutton {
+    background-image: -o-linear-gradient(-90deg, #b4e758 0, #3e8f27 100%);
+    background-image: -moz-linear-gradient(-90deg, #b4e758 0, #3e8f27 100%);
+    background-image: -webkit-linear-gradient(-90deg, #b4e758 0, #3e8f27 100%);
+    background-image: -ms-linear-gradient(-90deg, #b4e758 0, #3e8f27 100%);
+    background-image: linear-gradient(-180deg, #b4e758 0, #3e8f27 100%);
+    border: 1px solid #3e7300;
+    color: #3e7300
+}
+#theTime span.digit {
+    display: inline-block;
+    width: .6em;
+    text-align: center
+}
+.stopbutton {
+    background-image: -o-linear-gradient(-90deg, #fb5960 0, #a3171c 100%);
+    background-image: -moz-linear-gradient(-90deg, #fb5960 0, #a3171c 100%);
+    background-image: -webkit-linear-gradient(-90deg, #fb5960 0, #a3171c 100%);
+    background-image: -ms-linear-gradient(-90deg, #fb5960 0, #a3171c 100%);
+    background-image: linear-gradient(-180deg, #fb5960 0, #a3171c 100%);
+    border: 1px solid #4e0007;
+    color: #71000b;
+    margin-right: 15px
+}
+.changebutton, .stopbutton, .startbutton, .resetbutton {
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    font: 30px Lato;
+    text-transform: uppercase;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-top: 25px;
+    text-align: center
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+    #theTime {
+        font: 270px Lato;
+        line-height: 170px;
+        color: #fff;
+        -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
+        text-align: center;
+        margin-top: 50px
+    }
+    .changebutton, .stopbutton, .startbutton, .resetbutton {
+        width: 180px;
+        height: 50px;
+        border-radius: 8px;
+        font: 25px Lato;
+        text-transform: uppercase;
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin-top: 25px;
+        text-align: center
+    }
+    #timerControls {
+        margin-top: 100px;
+        margin-left: 0;
+        background: #323235;
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 30em;
+        text-align: justify;
+        -ms-text-justify: distribute-all-lines;
+        text-justify: distribute-all-lines;
+        min-width: 612px
+    }
+    #certTitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+        color: #fff;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0
+    }
+    #sessionTitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+        color: #fff;
+        line-height: 60px;
+        text-align: center
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    #theTime {
+        font: 270px Lato;
+        line-height: 170px;
+        color: #fff;
+        -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
+        text-align: center;
+        margin-top: 50px
+    }
+    .changebutton, .stopbutton, .startbutton, .resetbutton {
+        width: 180px;
+        height: 50px;
+        border-radius: 8px;
+        font: 25px Lato;
+        text-transform: uppercase;
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin-top: 25px;
+        text-align: center
+    }
+    #timerControls {
+        margin-top: 100px;
+        margin-left: 0;
+        background: #323235;
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 20em;
+        text-align: justify;
+        -ms-text-justify: distribute-all-lines;
+        text-justify: distribute-all-lines;
+        min-width: 612px
+    }
+    #certTitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+        color: #fff;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0
+    }
+    #sessionTitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+        color: #fff;
+        line-height: 60px;
+        text-align: center
+    }
+}
